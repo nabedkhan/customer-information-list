@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <!-- Google Font CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Add Info List</title>
+</head>
+
+<body>
+  <!-- START MAIN CONTENT -->
+  <!-- -------------------------------------------------------------------------------------------------->
+  <header class="bg-color">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-center p-4 text-white">Customer Information List</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- content body area -->
+  <section class="profile-area">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12">
+          <form id="form" class="mt-3 border bg-color p-md-5">
+            <div class="form-row mb-3">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Your Name" id="name" required>
+              </div>
+              <div class="col">
+                <input type="email" class="form-control" placeholder="Your Email" id="email" required>
+              </div>
+            </div>
+
+            <div class="form-row mb-3">
+              <div class="col">
+                <input type="number" class="form-control" placeholder="Phone Number" id="phone" required>
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Address" id="address">
+              </div>
+            </div>
+            <button type="submit" id="submit-btn" class="btn btn-custom">Add in List</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="profile-detail mt-3 p-5 border rounded">
+            <h4>Details Information</h4>
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone</th>
+                    <th scope="col">Address</th>
+                  </tr>
+                </thead>
+                <tbody class="table-body">
+                </tbody>
+              </table>
+            </div>
+            <button type="click" id="clear-btn" class="btn btn-custom mt-3">Clear List</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------------------------------------------------->
+  <!-- END MAIN CONTENT -->
+  <!-- JQuery JS -->
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+  <script src="js/app.js"></script>
+</body>
+
+</html>

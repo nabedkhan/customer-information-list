@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.bg-color{
+    background-color: #03A696;
+}
+.btn-custom{
+    background-color: #F2F2F2;
+    border-radius: 0px;
+    color: #03A696;
+    padding: 10px 20px;
+    transition: 0.4s;
+}
+.btn-custom:hover{
+    background-color: #DCDCDC;
+}
+.btn-custom:focus{
+    box-shadow: none;
+}
+.profile-area input{
+    border-radius: 0px;
+    border: none;
+}
+.profile-area input:focus {
+    border-color: transparent;
+    box-shadow: none;
+}
+/* hide input box arrow icon */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+/* table scrollbar design */
+.table-responsive::-webkit-scrollbar {
+    width: 100%;
+    height: 5px;
+}
+.table-responsive::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.table-responsive::-webkit-scrollbar-thumb {
+    background-color: #03A696;
+}
+
+@media (max-width: 768px) {
+#form{
+    padding: 30px;
+}
+}
